@@ -90,6 +90,7 @@ const HomePage = () => {
       console.error("Error donating blood:", error.message);
       Swal.fire("An error occurred while donating blood. Please try again.");
     }
+
   };
   
   if (loading) {
