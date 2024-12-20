@@ -1,0 +1,172 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffecec;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #e63946;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donate-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+.find-btn {
+  background-color: #457b9d;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.donor-list {
+  margin-top: 30px;
+  padding: 20px;
+  display:flex;
+  flex-direction:column;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donor-card {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.donor-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.donor-card p strong {
+  color: #e63946;
+}
+
+.donor-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e63946;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffecec;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background-color: #e63946;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}

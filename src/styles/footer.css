@@ -1,0 +1,26 @@
+.footer {
+    background-color: #e3342f; /* Blood red */
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  

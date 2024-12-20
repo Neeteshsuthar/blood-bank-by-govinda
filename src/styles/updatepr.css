@@ -1,0 +1,51 @@
+/* Blood background and effects */
+.blood-background {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.7));
+    animation: bloodPulse 2s infinite;
+  }
+  
+  /* Adding pulse animation */
+  @keyframes bloodPulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Styling for the inputs and the button */
+  .blood-input {
+    border: 1px solid #e63946;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Adding a blood drop effect to the title */
+  .blood-title {
+    font-family: 'Cursive', sans-serif;
+    color: #9e2a2f;
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Blood-themed shadow for the form box */
+  .blood-shadow {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  }
+  
+  /* Button style */
+  .blood-button {
+    background-color: #e63946;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .blood-button:hover {
+    background-color: #d32f2f;
+  }
+  
