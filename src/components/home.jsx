@@ -73,6 +73,12 @@ const HomePage = () => {
   
     try {
       const docRef = doc(db, "BloodDonors", currentUser.uid); // Use the user ID or another unique ID
+      const docSnap=await getDoc(docRef)
+      if (docSnap.exists()) {
+        Swal.fire('you have already donated blood ',"please signup again to donate.")
+        return;
+        
+      }
       await setDoc(docRef, {
         DonerBloodGroup: bloodGroup || "A+",  // Make sure the field name is DonerBloodGroup
         Email: currentUser?.UserEmail,
